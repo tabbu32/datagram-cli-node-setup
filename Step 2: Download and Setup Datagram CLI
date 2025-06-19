@@ -1,6 +1,1 @@
-wget https://github.com/Datagram-Group/datagram-cli-release/releases/latest/download/datagram-cli-x86_64-linux -O ~/datagram
-chmod +x ~/datagram
-mkdir -p ~/.local/bin
-mv ~/datagram ~/.local/bin/datagram
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
+
