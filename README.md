@@ -1,32 +1,25 @@
-# datagram-cli-node-setup
-Step-by-step guide to run Datagram CLI node on a VPS (Google Cloud, Contabo, etc.)
-# Datagram VPS Node Setup (Linux)
-
-This repo contains a step-by-step guide to run the Datagram CLI node on your Linux VPS.
+# Datagram-x-TheCryptoDrip
 
 ---
 
-## ✅ Requirements
+## 📦 Requirements
 
-- Ubuntu 20.04 / 22.04
-- At least 2 vCPU, 4GB RAM, 20GB SSD
-- Root or sudo access
+- Min **2 vCPU** & **4GB RAM**
+- Ubuntu 20.04 or 22.04 VPS
+- VPS Provider: Google Cloud / Contabo / Any Compatible
 
 ---
 
-## 📦 Installation
+## 🧠 What Is Datagram?
+
+Datagram is a decentralized compute network where you can run nodes and earn by contributing computing resources.
+
+---
+
+## 🚀 How to Run Datagram Node
+
+### 🔹 Step 1: Update & Install Dependencies
 
 ```bash
-# 1. Download
-wget https://github.com/Datagram-Group/datagram-cli-release/releases/latest/download/datagram-cli-x86_64-linux -O ~/datagram
-
-# 2. Make it executable
-chmod +x ~/datagram
-
-# 3. Move to ~/.local/bin
-mkdir -p ~/.local/bin
-mv ~/datagram ~/.local/bin/datagram
-
-# 4. Add to PATH
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
+sudo apt update && sudo apt upgrade -y
+sudo apt install wget curl nano -y 
